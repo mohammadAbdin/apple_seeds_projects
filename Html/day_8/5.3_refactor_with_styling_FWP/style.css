@@ -1,0 +1,48 @@
+*{
+    margin: 5px;
+}
+.my_img{
+max-width: 350px;
+max-height: 500px;
+}
+.fa-instagram{
+    color: orange;
+}
+.fa-futbol{
+    color: gray;
+}
+h3{
+    font-family: 'Rubik Scribble', sans-serif;
+    color: rgb(76, 76, 234);
+}
+#name{
+    font-family: 'Edu NSW ACT Foundation', sans-serif;
+
+}
+
+.card{
+    text-align: center;
+
+        margin: 10px;
+        background-color: rgb(250, 232, 161);
+        max-width: 500px;
+
+}
+.card img{
+    max-width: 500px;
+}
+.card h5{
+    text-decoration: underline;
+    color:  rgb(94, 87, 59);
+}
+.card h4{
+    color: red;
+}
+.card h2{
+    margin: 20px;
+}
+#Team{
+    position: relative;
+
+    color: rgb(27, 113, 141);
+}
