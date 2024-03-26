@@ -1,0 +1,19 @@
+.container {
+    background-color: rgb(250, 232, 161);
+    max-width: 500px;
+}
+.img{
+    max-width: 500px;
+}
+.places{
+    margin: 10px;
+    text-decoration: underline;
+    color:  rgb(136, 126, 87);
+}
+.cool{
+    margin: 15px;
+    color: red;
+}
+.golan{
+    margin: 20px;
+}
