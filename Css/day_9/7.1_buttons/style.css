@@ -1,0 +1,25 @@
+.flat{
+    border: none; 
+    background-color: blue;
+    
+}
+
+.round{
+    border-radius:40%;
+    background-color: green;
+    
+}
+
+.flat-ghost{
+    border: 2px solid red;
+}
+.round-ghost{
+    border-radius:40%;
+
+    border: 2px solid yellow;
+
+}
+button{
+    padding: 10px;
+
+}
