@@ -1,0 +1,12 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+}
+.box::before {
+    content: ""; 
+    position: absolute;
+    width: 200px;
+    height: 400px; 
+    background-color: #ba1a80; 
+}
