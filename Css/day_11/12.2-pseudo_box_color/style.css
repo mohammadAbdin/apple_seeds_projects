@@ -1,12 +1,28 @@
+body{
+    margin: 0px;
+}
 .box{
+    margin: 0px;
+    padding: 0px;
     width: 400px;
     height: 400px;
-    background-color: red;
+    background-color:red;
 }
-.box::before {
+.box::after {
     content: ""; 
     position: absolute;
+    left: 200px;
     width: 200px;
     height: 400px; 
-    background-color: #ba1a80; 
+    background-color: blue; 
+    z-index: 1;
+}
+.box:hover{
+    content: ""; 
+    position: absolute;
+    
+    width: 400px;
+    height: 400px; 
+    background-color:  rgb(164, 19, 166);;
+    z-index: 100;
 }
