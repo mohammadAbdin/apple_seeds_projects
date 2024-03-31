@@ -1,0 +1,52 @@
+.cool-box{
+    position: absolute;
+    display: flex;
+    background-color: black;
+    color: white;
+    left: 300px;
+    top: 250px;
+    width: 500px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+}
+p {
+    position: absolute;
+    padding: 35px;
+    background-color: black;
+    z-index: 10000;
+}
+.border-top{
+    width: 150px;
+    height: 110px;
+    border: 2px red solid ;
+    /* z-index: 100; */
+    /* border-left: 2px red solid ;
+    border-right: 2px red solid ; */
+    /* top: 10px; */
+    background-color: black;
+}
+.border-top::after{
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 150px;
+    width: 100px;
+    z-index: 10000;
+    top: 50px;
+    left: 200px;
+
+}
+.border-top::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 70px;
+    width: 250px;
+    z-index: 10000;
+    top: 90px;
+    left: 150px;
+
+}
