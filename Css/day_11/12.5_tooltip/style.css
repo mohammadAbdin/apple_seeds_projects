@@ -1,0 +1,39 @@
+.cool-box{
+    position: absolute;
+    display: flex;
+    /* background-color: black; */
+    color: black;
+    left: 300px;
+    top: 250px;
+    width: 500px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+}
+p {
+    position: relative;
+    padding: 35px;
+    z-index: 10000;
+}
+
+  
+  [data-tooltip]::after {
+    content: attr(data-tooltip); 
+    position: absolute; 
+    top: -10px;
+    left: 240px;
+    padding: 10px 10px; 
+    background-color: yellow;
+    color: black;
+    opacity: 0; 
+    border-radius: 9px; 
+    font-size: 12px; 
+  }
+  
+
+  [data-tooltip]:hover::after {
+    opacity: 1; 
+  }
+  

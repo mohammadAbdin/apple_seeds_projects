@@ -41,7 +41,7 @@ p {
 }
 .border-top::before{
     position: absolute;
-    content: "";
+    content: "hiiiiii";
     background-color: black;
     height: 70px;
     width: 250px;
