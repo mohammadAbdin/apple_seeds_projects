@@ -1,0 +1,44 @@
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+section{
+    padding: 20px;
+    background-color: rgb(121, 116, 110);
+    border-radius: 10px;
+}
+
+img{
+    width: 400px;
+    height: 600;
+}
+button{
+    border: 1px rgb(60, 58, 55) solid;
+    width: 200px;
+    padding: 8px;
+    margin: 7px;
+    color: white;
+    background-color: rgb(42, 41, 41);
+    box-shadow: 50%;
+}
+.dark-theme{
+    background-color: rgb(64, 62, 62);
+}
+.dark-theme section{
+    background-color:rgb(37, 36, 34);
+}
+.dark-theme section h1,
+.dark-theme section h3,
+.dark-theme section h5
+{
+    color: white;
+
+}
+.dark-theme button{
+    color: rgb(42, 41, 41);
+    background-color: white;
+
+}
