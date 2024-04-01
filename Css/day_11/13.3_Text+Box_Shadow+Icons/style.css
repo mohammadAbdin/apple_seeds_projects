@@ -1,0 +1,25 @@
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    padding: 20px;
+    background-color: rgb(121, 116, 110);
+    border-radius: 10px;
+    box-shadow: 5px 10px rgba(41, 41, 41, 0.1); 
+    transition: box-shadow 0.3s ease; 
+}
+
+section:hover {
+    box-shadow: 10px 20px rgb(36, 34, 34); 
+}
+
+img {
+    width: 400px;
+    height: auto; 
+    border-radius: 10px; 
+}
