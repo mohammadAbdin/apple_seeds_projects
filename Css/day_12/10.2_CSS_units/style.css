@@ -1,0 +1,16 @@
+
+.container {
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
+}
+.container p {
+  font-size: 2em; 
+}
+.container.rems p {
+  font-size: 3rem; 
+}
+
+.container.vw p {
+  font-size: 10vw; 
+}
