@@ -1,0 +1,135 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    margin: 30px;
+}
+
+/* circle-spinner */
+.circle-spinner {
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid #f06f13;
+    width: 70px;
+    height: 70px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* shadow-circle-spinner */
+.shadow-circle-spinner {
+    border-radius: 50%;
+    border-top: 2px solid #f06f13;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+}
+
+/* loader */
+.loader {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.first,
+.second,
+.third {
+    margin: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(170, 170, 170);
+    animation: lighting 1.2s ease-in-out infinite;
+
+}
+
+.first {
+    animation-delay: 0ms;
+
+}
+
+.second {
+    animation-delay: 400ms;
+
+}
+
+.third {
+    animation-delay: 800ms;
+}
+
+@keyframes lighting {
+
+    0%,
+    100% {
+        background-color: rgb(170, 170, 170);
+    }
+
+    50% {
+        background-color: #f06f13;
+    }
+}
+
+/* shadow-loader */
+.shadow-loader {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.shadow-loader .first,
+.shadow-loader .second,
+.shadow-loader .third {
+    margin: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    animation: lighting_for_shadow 1.2s ease-in-out infinite;
+}
+
+@keyframes lighting_for_shadow {
+
+    0%,
+    100% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: #f06f13;
+    }
+}
+
+.shadow-loader .first {
+    animation-delay: 0ms;
+
+}
+
+.shadow-loader .second {
+    animation-delay: 400ms;
+
+}
+
+.shadow-loader .third {
+    animation-delay: 800ms;
+
+}
