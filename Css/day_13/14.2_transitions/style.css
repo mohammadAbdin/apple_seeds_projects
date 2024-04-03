@@ -1,0 +1,204 @@
+
+body{
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #c5c1c1;
+}
+button{
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: #c5c1c1;
+    position: relative;
+}
+/* translateY */
+#translateY::before{
+    content: "";
+    /* background-color: rgb(246, 51, 51); */
+    background-color: hsla(0, 98%, 51%, 0.5);
+    position: absolute;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;    
+    left: 0px;
+    top: 0px;
+    width: 297px;
+    height: 0px;
+    transition-duration: 0.5s;
+    /* transition: top 0.5s, opacity 0.5s transform 0.5s;  */
+    
+}
+
+#translateY:hover::before{
+    top: 00px;
+    content: "Cool!!";
+    color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: hsla(0, 89%, 54%, 0.5);
+    position: absolute;
+    width: 297px;
+    height: 100px;
+    /* transform: translateY(100px); */
+}
+#translateY:hover::after{
+    color: black;
+    top: 00px;
+    content: "";
+    background-color: hsla(0, 89%, 54%, 0.5);
+    position: absolute;
+    width: 297px;
+    height: 0px;
+    opacity: 1;
+}
+#translateY:hover{
+color:  #c5c1c1;
+}
+/* translateX */
+#translateX::after{
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100px;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+    transition-duration: 2s;
+    background-color: hsla(262, 66%, 44%, 0.5);    
+}
+#translateX:hover::after{
+    background-color: hsla(262, 66%, 44%, 0.5);    
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    /* transform: translateX(100px); */
+}
+
+/* rotate */
+#rotate{
+    overflow: hidden;
+
+}
+
+#rotate::after{
+    content: "";
+    display: flex;
+    position: absolute;
+    background-color: hsla(58, 84%, 50%, 0.5);   
+}
+#rotate:hover::after{
+    display: block;
+    background-color: hsla(58, 84%, 50%, 0.5); 
+    height: 900px;
+    width: 100px;
+    left: -100px;
+    top: -400px;   
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: rotate(-90deg);
+    transition: transform 1s; 
+}
+/* skew */
+/* #skew::after{
+    display: none;
+    content: "";
+    background-color: purple;
+    height: 0px;
+    width: 0px;
+}
+#skew:hover::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: hsla(301, 90%, 49%, 0.5);    
+    transform: skew(-10deg,-5deg);
+    transition-duration: 1s;
+    height: 100px;
+    width: 300px;
+} */
+
+#skew{
+    /* overflow: hidden; */
+}
+
+
+#skew::after{
+    content: "";
+    display: none;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    transition-duration: 1;
+
+    top: 0px;
+    left: 0px;
+    background-color: hsla(301, 90%, 49%, 0);    
+}
+#skew:hover::after{
+    content: "";
+
+    display: flex;
+    height: 100px;
+    width: 200px;
+    background-color: hsla(301, 90%, 49%, 0.5);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: skew(-10deg,-5deg);
+    transition-duration: 1;
+}
+#skew:hover{
+    transform: skew(-10deg,-5deg);
+    transition-duration: 2s;
+}
+/* scale */
+#scale::after{
+    content: "scale";
+    display: none;
+    color: hsla(0, 0%, 100%, 0); 
+    background-color: hsla(0, 0%, 0%, 0);
+    position: absolute;
+    width: 3000px;
+    height: 1000px;
+
+    transition: transform 3s;
+
+}
+#scale:hover::after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "Scale";
+    color: hsla(0, 0%, 100%, 1); 
+    background-color: hsla(0, 0%, 0%, 0.9);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    transition: background-color 3s,;
+    height: 100px;
+    }
+
+    #scale:hover p{
+    transform: scale(3);
+    transition: transform 3s;
+    }
+
+
+

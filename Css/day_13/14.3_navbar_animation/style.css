@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    padding: 3px 3px;
+    align-items: center;
+    flex-direction: row;
+    width: 750px;
+    margin-left: 30px;
+
+}
+p{
+    font-size: 35px;
+
+}
+p:hover{
+    animation-duration: 2s;
+    animation: expandBorder 1s ease-in-out forwards;
+    cursor: pointer;
+
+}
+
+@keyframes expandBorder {
+    from {
+        border-top: 0px solid black;
+
+        border-bottom: 0 solid black; 
+        /* background-color: red; */
+      }
+      to {
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+
+        position: relative; 
+        width: fit-content; 
+        /* background-color: rgb(1, 43, 43); */
+      }
+    }
