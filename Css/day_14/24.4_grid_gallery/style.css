@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+}
+
+.grid-container {
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    display: grid;
+
+    grid-template-areas:
+        'robot robot trees trees trees children bycicle bycicle'
+        'robot robot trees trees trees children bycicle bycicle'
+        'sunset sunset trees trees trees garden garden car'
+        'sunset sunset beach beach ocean-wave garden garden car'
+        'sunset sunset beach beach bomba bomba bomba car'
+        'road castle castle people bomba bomba bomba car'
+        'road castle castle people bomba bomba bomba fish'
+        'road castle castle people bomba bomba bomba fish';
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container div {
+
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.robot {
+    grid-area: robot;
+}
+
+.trees {
+    grid-area: trees;
+}
+
+.children {
+    grid-area: children;
+}
+
+.bycicle {
+    grid-area: bycicle;
+}
+
+.sunset {
+    grid-area: sunset;
+}
+
+.beach {
+    grid-area: beach;
+}
+
+.ocean-wave {
+    grid-area: ocean-wave;
+}
+
+.garden {
+    grid-area: garden;
+}
+
+.car {
+    grid-area: car;
+}
+
+.road {
+    grid-area: road;
+}
+
+.castle {
+    grid-area: castle;
+}
+
+.people {
+    grid-area: people;
+}
+
+.bomba {
+    grid-area: bomba;
+}
+
+.fish {
+    grid-area: fish;
+}
