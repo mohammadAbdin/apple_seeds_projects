@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+}
+
+.grid-container {
+    width: 50vw;
+    height: 20vh;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        'Header Header Header Header '
+        'Sidebar  Content Content Sidebar2 '
+        'Sidebar  Content Content Sidebar2 '
+        'Footer Footer Footer Footer';
+    gap: 10px;
+    padding: 10px;
+}
+
+.Header {
+    background-color: rgb(252, 41, 41);
+    grid-area: Header;
+
+}
+
+.Sidebar {
+    background-color: rgb(85, 85, 239);
+    grid-area: Sidebar;
+}
+
+.Content {
+    background-color: rgb(37, 155, 37);
+    grid-area: Content;
+}
+
+.Sidebar2 {
+    background-color: rgb(138, 55, 138);
+    grid-area: Sidebar2;
+
+}
+
+.Footer {
+    background-color: yellow;
+    grid-area: Footer;
+}
+
+.grid-container>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 7px;
+    color: white;
+    padding: 5px;
+}
+
+p {
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        padding-top: 10vh;
+        width: 80vw;
+        height: 50vh;
+        background-color: white;
+        display: grid;
+        grid-template-areas:
+            'Header'
+            'Sidebar'
+            'Content'
+            'Content'
+            'Sidebar2'
+            'Footer';
+        gap: 1vh;
+    }
+
+    .grid-container>div {
+        border-radius: 12px;
+        padding: 3vw;
+
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grid-container {
+        padding-top: 4vh;
+        width: 70vw;
+        height: 40vh;
+        background-color: white;
+        display: grid;
+        grid-template-areas:
+            'Header Header Header Header '
+            'Sidebar  Content Content Content '
+            'Sidebar  Content Content Content '
+            'Sidebar2 Sidebar2 Sidebar2 Sidebar2'
+            'Footer Footer Footer Footer';
+        gap: 1vh;
+    }
+
+    .grid-container>div {
+        border-radius: 14px;
+        padding: 3vw;
+        font-size: 3vw;
+    }
+}

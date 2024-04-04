@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+}
+
+
+.grid-container {
+    width: 800px;
+    height: 200px;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        'red red blue blue '
+        'green purple purple purple '
+        'yellow yellow yellow yellow';
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.red {
+    background-color: red;
+    grid-area: red;
+
+}
+
+.blue {
+    background-color: rgb(68, 68, 165);
+    grid-area: blue;
+}
+
+.green {
+    background-color: rgb(28, 114, 28);
+    grid-area: green;
+}
+
+.purple {
+    background-color: rgb(103, 39, 103);
+    grid-area: purple;
+
+}
+
+.yellow {
+    background-color: yellow;
+    grid-area: yellow;
+}
+
+.grid-container>div {
+    text-align: center;
+    border-radius: 12px;
+
+}

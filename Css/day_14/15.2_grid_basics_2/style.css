@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: white;
+}
+
+.grid-container {
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+        'red red red red '
+        'blue blue green green '
+        'blue blue purple1 purple2';
+    gap: 10px;
+    padding: 10px;
+}
+
+.red {
+    background-color: rgb(242, 88, 88);
+    grid-area: red;
+
+}
+
+.blue {
+    background-color: rgb(85, 85, 239);
+    grid-area: blue;
+}
+
+.green {
+    background-color: rgb(37, 155, 37);
+    grid-area: green;
+}
+
+.purple1 {
+    background-color: rgb(138, 55, 138);
+    grid-area: purple1;
+
+}
+
+.purple2 {
+    background-color: rgb(138, 55, 138);
+    grid-area: purple2;
+}
+
+.grid-container>div {
+    text-align: center;
+    border-radius: 12px;
+
+}
